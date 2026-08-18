@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BRAVOS — Tu Franquicia de Comida Rápida</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&family=Russo+One&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── NAV ─────────────────────────────────── -->
+  <nav class="bv-nav navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand bv-logo" href="#hero">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <circle cx="16" cy="16" r="16" fill="#DC2626"/>
+          <path d="M8 20 Q16 10 24 20" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+          <path d="M10 23 Q16 15 22 23" stroke="#F87171" stroke-width="2" fill="none" stroke-linecap="round"/>
+          <circle cx="16" cy="10" r="2.5" fill="#FCD34D"/>
+        </svg>
+        BRAVOS
+      </a>
+      <button class="navbar-toggler bv-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link bv-nav-link" href="#ventajas">Ventajas</a></li>
+          <li class="nav-item"><a class="nav-link bv-nav-link" href="#modelo">Modelo</a></li>
+          <li class="nav-item"><a class="nav-link bv-nav-link" href="#numeros">Números</a></li>
+          <li class="nav-item"><a class="nav-link bv-nav-link" href="#franquiciados">Franquiciados</a></li>
+          <li class="nav-item"><a class="nav-link bv-nav-link" href="#inversion">Inversión</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn bv-btn-primary" href="#contacto">Quiero mi franquicia</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── HERO ─────────────────────────────────── -->
+  <section class="bv-hero" id="hero">
+    <div class="bv-hero-bg" id="heroParallax">
+      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1920&q=85&auto=format&fit=crop" alt="" class="bv-hero-img" />
+      <div class="bv-hero-overlay"></div>
+    </div>
+
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-8 col-xl-7">
+          <span class="bv-badge reveal" data-delay="0">
+            <svg width="13" height="13" viewBox="0 0 14 14" fill="#FCD34D" aria-hidden="true"><polygon points="7,1 8.8,5.2 13.4,5.5 10,8.5 11.1,13 7,10.5 2.9,13 4,8.5 0.6,5.5 5.2,5.2"/></svg>
+            La franquicia #1 en crecimiento de LATAM
+          </span>
+          <h1 class="bv-hero-title reveal" data-delay="100">
+            Construye tu<br />
+            <span class="bv-accent">Imperio</span><br />
+            de Sabor
+          </h1>
+          <p class="bv-hero-sub reveal" data-delay="200">
+            Únete a más de <strong>340 franquiciados</strong> que ya generan ingresos sólidos con la marca de comida rápida de mayor expansión en Latinoamérica.
+          </p>
+          <div class="d-flex flex-wrap gap-3 reveal" data-delay="300">
+            <a href="#contacto" class="btn bv-btn-primary bv-btn-lg">
+              Solicitar información
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="#modelo" class="btn bv-btn-ghost bv-btn-lg">Ver modelo de negocio</a>
+          </div>
+          <div class="bv-hero-trust reveal" data-delay="400">
+            <div class="bv-trust-item">
+              <strong>+340</strong>
+              <span>Locales activos</span>
+            </div>
+            <div class="bv-trust-sep" aria-hidden="true"></div>
+            <div class="bv-trust-item">
+              <strong>15 años</strong>
+              <span>en el mercado</span>
+            </div>
+            <div class="bv-trust-sep" aria-hidden="true"></div>
+            <div class="bv-trust-item">
+              <strong>ROI 18–24m</strong>
+              <span>promedio</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#ventajas" class="bv-scroll-cue" aria-label="Ir a la siguiente sección">
+      <span class="bv-scroll-line"></span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+    </a>
+  </section>
+
+  <!-- ── TICKER ─────────────────────────────────── -->
+  <div class="bv-ticker" aria-label="Reconocimientos">
+    <div class="bv-ticker-track" aria-hidden="true">
+      <span>Forbes Top Franquicias 2024</span><span class="bv-dot">●</span>
+      <span>Premio Nacional Emprendimiento</span><span class="bv-dot">●</span>
+      <span>ISO 9001 Certificada</span><span class="bv-dot">●</span>
+      <span>+12 países de presencia</span><span class="bv-dot">●</span>
+      <span>Best Fast Food Chain 2023</span><span class="bv-dot">●</span>
+      <span>Forbes Top Franquicias 2024</span><span class="bv-dot">●</span>
+      <span>Premio Nacional Emprendimiento</span><span class="bv-dot">●</span>
+      <span>ISO 9001 Certificada</span><span class="bv-dot">●</span>
+      <span>+12 países de presencia</span><span class="bv-dot">●</span>
+      <span>Best Fast Food Chain 2023</span><span class="bv-dot">●</span>
+    </div>
+  </div>
+
+  <!-- ── VENTAJAS ─────────────────────────────────── -->
+  <section class="bv-section bv-ventajas" id="ventajas">
+    <div class="bv-ventajas-bg" aria-hidden="true"></div>
+    <div class="container position-relative">
+      <div class="bv-section-header text-center reveal">
+        <span class="bv-tag">¿Por qué BRAVOS?</span>
+        <h2 class="bv-section-title">Una marca que trabaja <em>para ti</em></h2>
+        <p class="bv-section-desc mx-auto">Hemos construido un sistema donde el éxito de nuestra red es el nuestro. Cada franquiciado cuenta con el respaldo total de nuestra estructura.</p>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <div class="col-md-6 col-lg-4">
+          <article class="bv-card bv-card-ventaja reveal" data-delay="0">
+            <div class="bv-card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Sistema probado</h3>
+            <p>15 años de procesos optimizados. Recibe el manual completo de operación, capacitación presencial y soporte continuo.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="bv-card bv-card-ventaja reveal" data-delay="80">
+            <div class="bv-card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <h3>Soporte 360°</h3>
+            <p>Acompañamiento en marketing, logística, RR.HH. y tecnología. Equipos especializados por área disponibles siempre.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="bv-card bv-card-ventaja reveal" data-delay="160">
+            <div class="bv-card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3>Rentabilidad real</h3>
+            <p>Ticket promedio creciente, alta rotación de clientes y producto de consumo masivo. ROI promedio en 18 a 24 meses.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="bv-card bv-card-ventaja reveal" data-delay="240">
+            <div class="bv-card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <h3>Cadena de suministro</h3>
+            <p>Abastecimiento centralizado con precios negociados. Ingredientes frescos y proveedores certificados sin complicaciones.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="bv-card bv-card-ventaja reveal" data-delay="320">
+            <div class="bv-card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Comunidad activa</h3>
+            <p>Red de franquiciados que colaboran y se apoyan. Convenciones anuales, grupos privados y formación continua.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="bv-card bv-card-ventaja reveal" data-delay="400">
+            <div class="bv-card-icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>Tech integrado</h3>
+            <p>POS propio, app de delivery, CRM y analítica en tiempo real. Gestiona tu local desde cualquier dispositivo.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PRODUCTO ─────────────────────────────────── -->
+  <section class="bv-section bv-producto" id="producto">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 order-lg-2">
+          <div class="bv-producto-imgs reveal">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=800&q=80&auto=format&fit=crop"
+                 alt="Hamburguesa Bravos con papas y bebida" class="bv-producto-main" width="800" height="600" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1606755962773-d324e0a13086?w=400&q=80&auto=format&fit=crop"
+                 alt="Combo premium" class="bv-producto-thumb" width="400" height="300" loading="lazy" />
+            <div class="bv-producto-badge" aria-hidden="true">
+              <strong>4.9</strong>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="#FCD34D" aria-hidden="true"><polygon points="7,1 8.8,5.2 13.4,5.5 10,8.5 11.1,13 7,10.5 2.9,13 4,8.5 0.6,5.5 5.2,5.2"/></svg>
+              <span>Rating clientes</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <span class="bv-tag reveal">Nuestros productos</span>
+          <h2 class="bv-section-title reveal" data-delay="80">Sabores que generan <em>clientes fieles</em></h2>
+          <p class="bv-section-desc reveal" data-delay="160">Más de 40 productos en menú: hamburguesas, wraps, nuggets, combos premium y opciones de temporada. Receta propia, calidad garantizada en cada local.</p>
+          <ul class="bv-check-list reveal" data-delay="240">
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Recetas de chefs con 20+ años de experiencia</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Ingredientes sin conservantes artificiales</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Menú adaptable por región y estacionalidad</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#DC2626" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Opciones vegetarianas y sin gluten disponibles</li>
+          </ul>
+          <a href="#contacto" class="btn bv-btn-primary reveal" data-delay="320">
+            Ver menú completo
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── NÚMEROS / STATS ─────────────────────────────────── -->
+  <section class="bv-section bv-numeros" id="numeros">
+    <div class="bv-numeros-bg" id="numerosParallax" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=1920&q=80&auto=format&fit=crop" alt="" class="bv-numeros-img" loading="lazy" />
+      <div class="bv-numeros-overlay"></div>
+    </div>
+    <div class="container position-relative">
+      <div class="bv-section-header text-center reveal">
+        <span class="bv-tag bv-tag-light">En números</span>
+        <h2 class="bv-section-title bv-title-white">Resultados que <em>hablan por sí solos</em></h2>
+      </div>
+      <div class="row g-4 mt-2 justify-content-center">
+        <div class="col-6 col-lg-3">
+          <div class="bv-stat reveal" data-delay="0">
+            <div class="bv-stat-num" data-target="340" data-suffix="+">0</div>
+            <div class="bv-stat-label">Franquiciados activos</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="bv-stat reveal" data-delay="100">
+            <div class="bv-stat-num" data-target="12" data-suffix="">0</div>
+            <div class="bv-stat-label">Países con presencia</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="bv-stat reveal" data-delay="200">
+            <div class="bv-stat-num" data-target="92" data-suffix="%">0</div>
+            <div class="bv-stat-label">Tasa de renovación</div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-3">
+          <div class="bv-stat reveal" data-delay="300">
+            <div class="bv-stat-num" data-target="15" data-suffix="M+">0</div>
+            <div class="bv-stat-label">Clientes al año</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MODELO ─────────────────────────────────── -->
+  <section class="bv-section bv-modelo" id="modelo">
+    <div class="container">
+      <div class="bv-section-header text-center reveal">
+        <span class="bv-tag">Cómo funciona</span>
+        <h2 class="bv-section-title">Tu camino hacia <em>tu propio local</em></h2>
+        <p class="bv-section-desc mx-auto">Un proceso claro, acompañado y sin sorpresas. Desde el primer contacto hasta la apertura en 90–120 días.</p>
+      </div>
+
+      <div class="bv-steps">
+        <!-- step 1 -->
+        <div class="bv-step reveal" data-delay="0">
+          <div class="bv-step-num" aria-hidden="true">01</div>
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+              <h3>Solicitud &amp; pre-calificación</h3>
+              <p>Completa el formulario de interés. Nuestro equipo te contactará en 48h para una entrevista inicial y evaluar tu perfil como franquiciado.</p>
+            </div>
+            <div class="col-lg-6">
+              <img src="https://images.unsplash.com/photo-1542744094-24638eff58bb?w=700&q=80&auto=format&fit=crop"
+                   alt="Reunión de evaluación" class="bv-step-img" width="700" height="460" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        <!-- step 2 -->
+        <div class="bv-step bv-step-alt reveal" data-delay="60">
+          <div class="bv-step-num" aria-hidden="true">02</div>
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6 order-lg-2">
+              <h3>Selección de local &amp; contrato</h3>
+              <p>Te ayudamos a encontrar la ubicación ideal con nuestro estudio de mercado. Firmamos contrato y coordinamos el financiamiento.</p>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+              <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=700&q=80&auto=format&fit=crop"
+                   alt="Firma de contrato" class="bv-step-img" width="700" height="460" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        <!-- step 3 -->
+        <div class="bv-step reveal" data-delay="120">
+          <div class="bv-step-num" aria-hidden="true">03</div>
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6">
+              <h3>Construcción &amp; equipamiento</h3>
+              <p>Arquitectos y proveedores certificados montan tu local según el estándar BRAVOS. Control total de calidad en obra.</p>
+            </div>
+            <div class="col-lg-6">
+              <img src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?w=700&q=80&auto=format&fit=crop"
+                   alt="Construcción del local" class="bv-step-img" width="700" height="460" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        <!-- step 4 -->
+        <div class="bv-step bv-step-alt reveal" data-delay="180">
+          <div class="bv-step-num" aria-hidden="true">04</div>
+          <div class="row align-items-center g-4">
+            <div class="col-lg-6 order-lg-2">
+              <h3>Capacitación &amp; apertura</h3>
+              <p>Entrenamos a ti y tu equipo durante 3 semanas. Apertura con campaña de lanzamiento incluida y gerente de zona asignado.</p>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+              <img src="https://images.unsplash.com/photo-1556745753-b2904692b3cd?w=700&q=80&auto=format&fit=crop"
+                   alt="Capacitación del equipo" class="bv-step-img" width="700" height="460" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GALLERY ─────────────────────────────────── -->
+  <section class="bv-gallery" aria-label="Galería de locales BRAVOS">
+    <div class="bv-gallery-grid">
+      <figure class="bv-gallery-item bv-gallery-tall reveal">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=700&q=80&auto=format&fit=crop" alt="Local BRAVOS interior" loading="lazy" />
+        <figcaption>Interior moderno</figcaption>
+      </figure>
+      <figure class="bv-gallery-item reveal" data-delay="60">
+        <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=700&q=80&auto=format&fit=crop" alt="Hamburguesa clásica" loading="lazy" />
+        <figcaption>Hamburguesa clásica</figcaption>
+      </figure>
+      <figure class="bv-gallery-item reveal" data-delay="120">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=700&q=80&auto=format&fit=crop" alt="Combo premium BRAVOS" loading="lazy" />
+        <figcaption>Combo premium</figcaption>
+      </figure>
+      <figure class="bv-gallery-item bv-gallery-wide reveal" data-delay="180">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&q=80&auto=format&fit=crop" alt="Local BRAVOS fachada" loading="lazy" />
+        <figcaption>Fachada exterior</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ── TESTIMONIOS ─────────────────────────────────── -->
+  <section class="bv-section bv-testimonios" id="franquiciados">
+    <div class="bv-testimonios-bg" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=1920&q=80&auto=format&fit=crop" alt="" loading="lazy" />
+      <div class="bv-testimonios-overlay"></div>
+    </div>
+    <div class="container position-relative">
+      <div class="bv-section-header text-center reveal">
+        <span class="bv-tag bv-tag-light">Franquiciados reales</span>
+        <h2 class="bv-section-title bv-title-white">Historias de <em>éxito comprobado</em></h2>
+        <p class="bv-section-desc bv-desc-light mx-auto">Personas como tú que apostaron por BRAVOS y transformaron su vida financiera.</p>
+      </div>
+      <div class="row g-4 mt-2">
+        <div class="col-lg-4">
+          <article class="bv-card bv-card-testi reveal" data-delay="0">
+            <div class="bv-stars" aria-label="5 estrellas">
+              <svg width="16" height="16" viewBox="0 0 14 14" fill="#FCD34D" aria-hidden="true"><polygon points="7,1 8.8,5.2 13.4,5.5 10,8.5 11.1,13 7,10.5 2.9,13 4,8.5 0.6,5.5 5.2,5.2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 14 14" fill="#FCD34D" aria-hidden="true"><polygon points="7,1 8.8,5.2 13.4,5.5 10,8.5 11.1,13 7,10.5 2.9,13 4,8.5 0.6,5.5 5.2,5.2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 14 14" fill="#FCD34D" aria-hidden="true"><polygon points="7,1 8.8,5.2 13.4,5.5 10,8.5 11.1,13 7,10.5 2.9,13 4,8.5 0.6,5.5 5.2,5.2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 14 14" fill="#FCD34D" aria-hidden="true"><polygon points="7,1 8.8,5.2 13.4,5.5 10,8.5 11.1,13 7,10.5 2.9,13 4,8.5 0.6,5.5 5.2,5.2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 14 14" fill="#FCD34D" aria-hidden="true"><polygon points="7,1 8.8,5.2 13.4,5.5 10,8.5 11.1,13 7,10.5 2.9,13 4,8.5 0.6,5.5 5.2,5.2"/></svg>
+            </div>
+            <blockquote><p>"Recuperé mi inversión en 20 meses. Hoy tengo dos locales y ya evalúo el tercero. El soporte del equipo BRAVOS es increíble."</p></blockquote>
+            <footer class="bv-testi-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80&auto=format&fit=crop&facepad=2&faces=1" alt="Carlos Mendoza" class="bv-avatar" width="56" height="56" loading="lazy" />
+              <div>
+                <strong>Carlos Mendoza</strong>
+                <span>Franquiciado 2021 · Monterrey, MX</span>
+              </div>
+            </footer>
+          </article>
+        </div>
+        <div class="col-lg-4">
+          <article class="bv-card bv-card-testi bv-card-testi-featured reveal" data-delay="100">
+            <div class="bv-stars" aria-label="5 estrellas">
+              <svg width="16" height="16" viewBox="0 0 14 14" fill="#FCD34D" aria-hidden="true"><polygon points="7,1 8.8,5.2 13.4,5.5 10,8.5 11.1,13 7,10.5 2.9,13 4,8.5 0.6,5.5 5.2,5.2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 14 14" fill="#FCD34D" aria-hidden="true"><polygon points="7,1 8.8,5.2 13.4,5.5 10,8.5 11.1,13 7,10.5 2.9,13 4,8.5 0.6,5.5 5.2,5.2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 14 14" fill="#FCD34D" aria-hidden="true"><polygon points="7,1 8.8,5.2 13.4,5.5 10,8.5 11.1,13 7,10.5 2.9,13 4,8.5 0.6,5.5 5.2,5.2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 14 14" fill="#FCD34D" aria-hidden="true"><polygon points="7,1 8.8,5.2 13.4,5.5 10,8.5 11.1,13 7,10.5 2.9,13 4,8.5 0.6,5.5 5.2,5.2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 14 14" fill="#FCD34D" aria-hidden="true"><polygon points="7,1 8.8,5.2 13.4,5.5 10,8.5 11.1,13 7,10.5 2.9,13 4,8.5 0.6,5.5 5.2,5.2"/></svg>
+            </div>
+            <blockquote><p>"Sin experiencia en gastronomía y con el apoyo de BRAVOS abrí mi local en 95 días. El sistema de capacitación es completo y el equipo siempre está disponible."</p></blockquote>
+            <footer class="bv-testi-author">
+              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80&auto=format&fit=crop&facepad=2&faces=1" alt="Ana Torres" class="bv-avatar" width="56" height="56" loading="lazy" />
+              <div>
+                <strong>Ana Torres</strong>
+                <span>Franquiciada 2022 · Bogotá, CO</span>
+              </div>
+            </footer>
+          </article>
+        </div>
+        <div class="col-lg-4">
+          <article class="bv-card bv-card-testi reveal" data-delay="200">
+            <div class="bv-stars" aria-label="5 estrellas">
+              <svg width="16" height="16" viewBox="0 0 14 14" fill="#FCD34D" aria-hidden="true"><polygon points="7,1 8.8,5.2 13.4,5.5 10,8.5 11.1,13 7,10.5 2.9,13 4,8.5 0.6,5.5 5.2,5.2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 14 14" fill="#FCD34D" aria-hidden="true"><polygon points="7,1 8.8,5.2 13.4,5.5 10,8.5 11.1,13 7,10.5 2.9,13 4,8.5 0.6,5.5 5.2,5.2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 14 14" fill="#FCD34D" aria-hidden="true"><polygon points="7,1 8.8,5.2 13.4,5.5 10,8.5 11.1,13 7,10.5 2.9,13 4,8.5 0.6,5.5 5.2,5.2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 14 14" fill="#FCD34D" aria-hidden="true"><polygon points="7,1 8.8,5.2 13.4,5.5 10,8.5 11.1,13 7,10.5 2.9,13 4,8.5 0.6,5.5 5.2,5.2"/></svg>
+              <svg width="16" height="16" viewBox="0 0 14 14" fill="#FCD34D" aria-hidden="true"><polygon points="7,1 8.8,5.2 13.4,5.5 10,8.5 11.1,13 7,10.5 2.9,13 4,8.5 0.6,5.5 5.2,5.2"/></svg>
+            </div>
+            <blockquote><p>"La marca ya tiene reconocimiento. Cuando dices BRAVOS la gente sabe qué esperar. Mi local tiene lista de espera los fines de semana."</p></blockquote>
+            <footer class="bv-testi-author">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80&auto=format&fit=crop&facepad=2&faces=1" alt="Roberto Gama" class="bv-avatar" width="56" height="56" loading="lazy" />
+              <div>
+                <strong>Roberto Gama</strong>
+                <span>Franquiciado 2020 · Lima, PE</span>
+              </div>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── INVERSIÓN / PLANES ─────────────────────────────────── -->
+  <section class="bv-section bv-inversion" id="inversion">
+    <div class="container">
+      <div class="bv-section-header text-center reveal">
+        <span class="bv-tag">Planes de inversión</span>
+        <h2 class="bv-section-title">Elige el formato <em>que mejor se adapta</em></h2>
+        <p class="bv-section-desc mx-auto">Desde quioscos hasta restaurantes completos. El modelo adecuado para tu capacidad de inversión.</p>
+      </div>
+      <div class="row g-4 mt-2 justify-content-center">
+        <div class="col-md-6 col-lg-4">
+          <article class="bv-card bv-plan reveal" data-delay="0">
+            <div class="bv-plan-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </div>
+            <div class="bv-plan-name">Quiosco Express</div>
+            <div class="bv-plan-price"><span>Desde</span><strong>USD 35,000</strong></div>
+            <div class="bv-plan-sqm">30–50 m²</div>
+            <ul class="bv-plan-features">
+              <li>Menú compacto de 15 productos</li>
+              <li>Ideal para centros comerciales</li>
+              <li>Inversión inicial mínima</li>
+              <li>ROI estimado: 14–18 meses</li>
+              <li>Personal: 4–6 personas</li>
+            </ul>
+            <a href="#contacto" class="btn bv-btn-outline w-100 mt-auto">Solicitar info</a>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="bv-card bv-plan bv-plan-featured reveal" data-delay="100">
+            <div class="bv-plan-popular">Más popular</div>
+            <div class="bv-plan-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <div class="bv-plan-name">Local Estándar</div>
+            <div class="bv-plan-price"><span>Desde</span><strong>USD 90,000</strong></div>
+            <div class="bv-plan-sqm">80–120 m²</div>
+            <ul class="bv-plan-features">
+              <li>Menú completo 40+ productos</li>
+              <li>Salón 40 cubiertos + delivery</li>
+              <li>Campaña de apertura incluida</li>
+              <li>ROI estimado: 18–22 meses</li>
+              <li>Personal: 10–14 personas</li>
+            </ul>
+            <a href="#contacto" class="btn bv-btn-primary w-100 mt-auto">Solicitar info</a>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="bv-card bv-plan reveal" data-delay="200">
+            <div class="bv-plan-icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="bv-plan-name">Drive-Thru Premium</div>
+            <div class="bv-plan-price"><span>Desde</span><strong>USD 180,000</strong></div>
+            <div class="bv-plan-sqm">200–300 m²</div>
+            <ul class="bv-plan-features">
+              <li>Drive-thru + salón completo</li>
+              <li>Zona exclusiva de 5km</li>
+              <li>Gerente dedicado 90 días</li>
+              <li>ROI estimado: 22–28 meses</li>
+              <li>Personal: 20–25 personas</li>
+            </ul>
+            <a href="#contacto" class="btn bv-btn-outline w-100 mt-auto">Solicitar info</a>
+          </article>
+        </div>
+      </div>
+      <p class="bv-inversion-note reveal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        Precios referenciales. Incluyen canon de franquicia, equipamiento estándar y capacitación inicial. No incluyen local ni adecuaciones específicas.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── CTA FINAL / CONTACTO ─────────────────────────────────── -->
+  <section class="bv-section bv-contacto" id="contacto">
+    <div class="bv-contacto-bg" aria-hidden="true">
+      <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=1920&q=80&auto=format&fit=crop" alt="" id="ctaParallax" loading="lazy" />
+      <div class="bv-contacto-overlay"></div>
+    </div>
+    <div class="container position-relative">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <span class="bv-tag bv-tag-light reveal">¡Plazas limitadas 2025!</span>
+          <h2 class="bv-section-title bv-title-white reveal" data-delay="80">Da el primer paso hacia tu <em>libertad financiera</em></h2>
+          <p class="bv-section-desc bv-desc-light reveal" data-delay="160">Nuestro equipo de desarrollo de franquicias te responderá en menos de 48 horas con información personalizada para tu perfil.</p>
+          <ul class="bv-check-list bv-check-list-light reveal" data-delay="240">
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCD34D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Sin compromiso</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCD34D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Información confidencial</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FCD34D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Respuesta garantizada en 48h</li>
+          </ul>
+        </div>
+        <div class="col-lg-6 reveal" data-delay="100">
+          <form class="bv-form" id="contactForm" novalidate aria-label="Formulario de contacto">
+            <h3>Quiero saber más</h3>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre completo <span aria-hidden="true">*</span></label>
+              <input type="text" id="nombre" name="nombre" class="form-control bv-input" placeholder="Tu nombre" required autocomplete="name" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" class="form-control bv-input" placeholder="tu@correo.com" required autocomplete="email" />
+            </div>
+            <div class="mb-3">
+              <label for="telefono" class="form-label">Teléfono <span aria-hidden="true">*</span></label>
+              <input type="tel" id="telefono" name="telefono" class="form-control bv-input" placeholder="+52 55 0000 0000" required autocomplete="tel" />
+            </div>
+            <div class="row g-3 mb-3">
+              <div class="col-6">
+                <label for="pais" class="form-label">País</label>
+                <select id="pais" name="pais" class="form-select bv-input" autocomplete="country">
+                  <option value="">Tu país</option>
+                  <option>México</option>
+                  <option>Colombia</option>
+                  <option>Argentina</option>
+                  <option>Chile</option>
+                  <option>Perú</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+              <div class="col-6">
+                <label for="plan" class="form-label">Formato</label>
+                <select id="plan" name="plan" class="form-select bv-input">
+                  <option value="">Tu interés</option>
+                  <option>Quiosco Express</option>
+                  <option>Local Estándar</option>
+                  <option>Drive-Thru Premium</option>
+                  <option>No lo sé aún</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn bv-btn-primary bv-btn-lg w-100" id="submitBtn">
+              Solicitar información gratuita
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+            <p class="bv-form-privacy">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Tus datos son confidenciales y no serán compartidos.
+            </p>
+            <div class="bv-form-success" id="formSuccess" role="alert" aria-live="polite" hidden>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <div><strong>¡Mensaje enviado!</strong><p>Te contactaremos en menos de 48 horas.</p></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────── -->
+  <footer class="bv-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a class="bv-logo d-inline-flex align-items-center gap-2 mb-3 text-decoration-none" href="#hero">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#DC2626"/><path d="M8 20 Q16 10 24 20" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/><path d="M10 23 Q16 15 22 23" stroke="#F87171" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="16" cy="10" r="2.5" fill="#FCD34D"/></svg>
+            BRAVOS
+          </a>
+          <p class="bv-footer-tagline">La franquicia que te hace dueño.</p>
+          <div class="d-flex gap-3 mt-3">
+            <a href="#" class="bv-social" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" class="bv-social" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" class="bv-social" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <strong class="bv-footer-col-title">Franquicia</strong>
+          <nav class="d-flex flex-column gap-2 mt-3" aria-label="Franquicia">
+            <a href="#ventajas" class="bv-footer-link">¿Por qué BRAVOS?</a>
+            <a href="#modelo" class="bv-footer-link">Modelo</a>
+            <a href="#inversion" class="bv-footer-link">Inversión</a>
+            <a href="#franquiciados" class="bv-footer-link">Casos de éxito</a>
+          </nav>
+        </div>
+        <div class="col-6 col-lg-2">
+          <strong class="bv-footer-col-title">La marca</strong>
+          <nav class="d-flex flex-column gap-2 mt-3" aria-label="La marca">
+            <a href="#producto" class="bv-footer-link">Nuestros productos</a>
+            <a href="#numeros" class="bv-footer-link">En números</a>
+            <a href="#contacto" class="bv-footer-link">Contacto</a>
+          </nav>
+        </div>
+        <div class="col-6 col-lg-2">
+          <strong class="bv-footer-col-title">Legal</strong>
+          <nav class="d-flex flex-column gap-2 mt-3" aria-label="Legal">
+            <a href="#" class="bv-footer-link">Términos</a>
+            <a href="#" class="bv-footer-link">Privacidad</a>
+            <a href="#" class="bv-footer-link">Aviso legal</a>
+          </nav>
+        </div>
+      </div>
+      <hr class="bv-footer-hr" />
+      <div class="d-flex flex-column flex-md-row justify-content-between gap-2 bv-footer-bottom">
+        <p>© 2025 BRAVOS Franquicias. Todos los derechos reservados.</p>
+        <p>Datos de ROI estimados. Los resultados individuales pueden variar.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
